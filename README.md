@@ -1,1 +1,1 @@
-# wordpress-vite
+# vite starter vanilla

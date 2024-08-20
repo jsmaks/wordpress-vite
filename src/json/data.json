@@ -1,0 +1,16 @@
+{
+  "page": {
+    "lang": "uk",
+    "title": "",
+    "description": "",
+    "canonical": "https://"
+  },
+  "header": {
+    "id": "header",
+    "title": "header"
+  },
+  "footer": {
+    "id": "footer",
+    "title": "footer"
+  }
+}

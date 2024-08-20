@@ -1,0 +1,15 @@
+@use 'sass:math';
+
+// UTILS
+@import 'utils/mixins';
+
+// VENDORS
+@import 'vendors/tailwind';
+
+// COMPONENTS
+@import 'components/modal';
+@import 'components/form';
+@import 'components/input';
+
+// SECTIONS
+@import 'sections/header';
