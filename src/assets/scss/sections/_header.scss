@@ -1,2 +1,11 @@
-// .header {
-// }
+.header {
+  background-image: url('./assets/images/sections/header/bg-girl-mob@2x.webp'),
+    url('../images/sections/header/bg-mob.svg');
+  background-repeat: no-repeat;
+  background-size:
+    257px auto,
+    1827px auto;
+  background-position:
+    top 40px right calc(50% - 121px),
+    top -945px right calc(50% + 180px);
+}

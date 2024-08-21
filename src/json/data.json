@@ -7,7 +7,16 @@
   },
   "header": {
     "id": "header",
-    "title": "header"
+    "title": "Find your<br> own way<br> in sport",
+    "text": "New app for productive sport activities is available now",
+    "list": [
+      { "title": "Overview", "anchor": "header" },
+      { "title": "Features", "anchor": "app" },
+      { "title": "Pricing", "anchor": "plans" },
+      { "title": "Contacts ", "anchor": "subscribe" }
+    ],
+    "btnText": "Get Started",
+    "btnSecond": "Try demo"
   },
   "score": {
     "id": "score",
