@@ -40,6 +40,19 @@
 
   "footer": {
     "id": "footer",
-    "title": "footer"
+    "title": "footer",
+    "year": "© 2023 FitGym",
+    "list": [
+      { "title": "Overview", "anchor": "header" },
+      { "title": "Features", "anchor": "app" },
+      { "title": "Pricing", "anchor": "plans" },
+      { "title": "Contacts", "anchor": "subscribe" }
+    ],
+    "socials": [
+      { "title": "Facebook", "icon": "facebook" },
+      { "title": "Instagram", "icon": "instagram" },
+      { "title": "Twitter", "icon": "twitter" },
+      { "title": "LinkedIn", "icon": "linkedin" }
+    ]
   }
 }

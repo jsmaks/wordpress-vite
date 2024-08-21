@@ -46,7 +46,8 @@ module.exports = {
         },
         white: {
           DEFAULT: '#ffffff', // class="bg-white text-white border-white"
-          dark: '#fafafa', // class="bg-white-dark text-white-dark border-white-dark"
+          dark: '#fafafa', 
+          'FD': '#FDFDFD',
         },
       
         accent: '#2E43A4', // class="bg-accent text-accent border-accent"
