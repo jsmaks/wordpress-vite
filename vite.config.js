@@ -58,9 +58,8 @@ export default defineConfig({
   },
   plugins: [
     nunjucks({
-      variables: { 'index.html' : data },
+      variables: { 'index.html': data },
       nunjucksConfigure: { autoescape: false },
-      
     }),
     ViteSvgSpriteWrapper({
       icons: 'src/assets/images/sprite/**/*.svg',

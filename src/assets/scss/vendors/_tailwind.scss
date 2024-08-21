@@ -4,19 +4,21 @@
 
 /* If you need to download some fonts - use this site: https://www.cufonfonts.com/ */
 @layer base {
-  // @include font-face('Montserrat', '../fonts/Montserrat-Thin', 100);
-  // @include font-face('Montserrat', '../fonts/Montserrat-ExtraLight', 200);
-  // @include font-face('Montserrat', '../fonts/Montserrat-Light', 300);
-  @include font-face('Montserrat', '../fonts/Montserrat-Regular', 400);
-  // @include font-face('Montserrat', '../fonts/Montserrat-Medium', 500);
-  // @include font-face('Montserrat', '../fonts/Montserrat-SemiBold', 600);
-  // @include font-face('Montserrat', '../fonts/Montserrat-Bold', 700);
-  // @include font-face('Montserrat', '../fonts/Montserrat-ExtraBold', 800);
-  // @include font-face('Montserrat', '../fonts/Montserrat-Black', 900);
+  @include font-face('Oswald', '../fonts/Oswald-Light', 300);
+  @include font-face('Oswald', '../fonts/Oswald-SemiBold', 600);
+  @include font-face('Oswald', '../fonts/Oswald-Bold', 700);
+
+  @include font-face('Poppins', '../fonts/Poppins-Regular', 400);
+  @include font-face('Poppins', '../fonts/Poppins-Medium', 500);
+  @include font-face('Poppins', '../fonts/Poppins-SemiBold', 600);
+
+  @include font-face('Roboto', '../fonts/Roboto-Regular', 400);
+  @include font-face('Roboto', '../fonts/Roboto-Medium', 500);
+  @include font-face('Roboto', '../fonts/Roboto-Bold', 700);
 }
 
 body {
-  @apply bg-body font-IBMPlexSans leading-[1.3] text-black-47;
+  @apply bg-[#000105] font-roboto leading-[1.3] font-light text-[#FDFDFD];
 }
 
 .section {
@@ -24,11 +26,11 @@ body {
 }
 
 .section-title {
-  @apply font-IBMPlexSans text-[20px] font-bold leading-[1.3] text-black-1A md:text-[32px];
+  @apply font-oswald text-[32px] font-bold leading-[1.3] text-[#FDFDFD] md:text-[32px] xl:text-5xl;
 }
 
 .btn {
-  @apply block h-[56px] w-full rounded-full bg-accent p-3 font-IBMPlexSans text-[20px] font-semibold  leading-[1.6] text-white transition-colors active:bg-[#213075] xl:hover:bg-[#213075] xl:active:bg-[#5A6FCC] xxl:h-[64px];
+  @apply block p-5 rounded-xl w-full max-w-[360px] font-poppins font-semibold text-base;
 }
 
 .visually-hidden {
@@ -39,4 +41,33 @@ body {
   height: 1px !important;
   width: 1px !important;
   overflow: hidden;
+}
+
+.btn-blue {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(180deg, #0239FE 0%, #0285FE 100%);
+  transition: box-shadow 0.3s ease;
+
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, #0239FE 0%, #0285FE 100%);
+    transition: background 0.3s ease;
+    z-index: -1;
+  }
+
+  &:hover:before,
+  &:focus:before {
+    background: linear-gradient(276deg, #0239FE 2.88%, #2697FF 100%);
+  }
+
+  &:hover,
+  &:focus {
+    box-shadow: 5px 10px 30px 0px rgba(76, 64, 247, 0.50);
+  }
 }

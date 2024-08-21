@@ -9,6 +9,35 @@
     "id": "header",
     "title": "header"
   },
+  "score": {
+    "id": "score",
+    "title": "score"
+  },
+  "why": {
+    "id": "why",
+    "title": "why"
+  },
+  "choose": {
+    "id": "choose",
+    "title": "choose"
+  },
+  "app": {
+    "id": "app",
+    "title": "app"
+  },
+  "plans": {
+    "id": "plans",
+    "title": "plans"
+  },
+  "find": {
+    "id": "find",
+    "title": "find"
+  },
+  "subscribe": {
+    "id": "subscribe",
+    "title": "subscribe"
+  },
+
   "footer": {
     "id": "footer",
     "title": "footer"

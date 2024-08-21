@@ -16,11 +16,9 @@ module.exports = {
     },
     // BASE FONT
     fontFamily: {
-      montserrat: ['Montserrat', 'sans-serif'], // class="font-montserrat"
-      gotham: ['Gotham', 'sans-serif'], // class="font-gotham" (goiteens)
-      IBMPlexMono: ['IBMPlexMono', 'sans-serif'], // class="font-IBMPlexMono"
-      IBMPlexSans: ['IBMPlexSans', 'sans-serif'], // class="font-IBMPlexSans"
-      // exo: ['"Exo 2"', 'sans-serif'],
+      oswald: ['Oswald', 'sans-serif'],
+      poppins: ['Poppins', 'sans-serif'],
+      roboto: ['Roboto', 'sans-serif'],
     },
     // SHADOW
     boxShadow: {
@@ -50,12 +48,7 @@ module.exports = {
           DEFAULT: '#ffffff', // class="bg-white text-white border-white"
           dark: '#fafafa', // class="bg-white-dark text-white-dark border-white-dark"
         },
-        purple: {
-          DEFAULT: '#5331B2', // hero bg, button main color
-          light: '#C2B0F5', // carousel btn
-          dark: '#452994', // button hover-focus
-          active: '#8160E0', // button active
-        },
+      
         accent: '#2E43A4', // class="bg-accent text-accent border-accent"
         primary: '#f1f1f1',
         second: '#f2f2f2',
