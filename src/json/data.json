@@ -7,15 +7,49 @@
   },
   "header": {
     "id": "header",
-    "title": "header"
+    "title": "Find your<br class=\"md:hidden\"> own way<br class=\"md:hidden\"> in sport",
+    "text": "New app for productive sport activities is available now",
+    "list": [
+      { "title": "Overview", "anchor": "header" },
+      { "title": "Features", "anchor": "app" },
+      { "title": "Pricing", "anchor": "plans" },
+      { "title": "Contacts ", "anchor": "subscribe" }
+    ],
+    "btnText": "Get Started",
+    "btnSecond": "Try demo"
   },
   "score": {
     "id": "score",
-    "title": "score"
+    "title": "score",
+    "list1": [
+      {
+        "number": "<span class=\"count\">10</span>M+",
+        "text": "members"
+      },
+      {
+        "number": "<span class=\"count\">125</span>+",
+        "text": "partners"
+      }
+    ],
+    "list2": [
+      {
+        "number": "<span class=\"count\">35</span>+",
+        "text": "best coach"
+      },
+      {
+        "number": "<span class=\"count\">100</span>+",
+        "text": "apretiation"
+      }
+    ]
   },
   "why": {
     "id": "why",
-    "title": "why"
+    "title": "Why you should choose us?",
+    "list": [
+      "Get your workout in, a massage or even a mani/pedi with the same membership.",
+      "Memberships are month-to-month and we make changing your plan easy.",
+      "Book at any studio, gym, salon or spa you want, as many times as you want."
+    ]
   },
   "choose": {
     "id": "choose",
