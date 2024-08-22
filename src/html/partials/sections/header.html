@@ -1,10 +1,12 @@
 {% set section = header %}
 
-<header class="{{section.id}} pt-5 pb-[60px]">
+<header class="{{section.id}} pt-5 pb-[60px] md:pb-[168px] xl:pt-6 xl:pb-[324px]">
   <div class="container">
-    <div class="flex items-start justify-between">
+    <div
+      class="flex items-start mb-[100px] smOnly:justify-between md:mb-[107px] md:items-center md:gap-[60px] xl:mb-[110px] xl:gap-[105px]"
+    >
       <a
-        class="block w-max duration-300 hover:scale-105 focus:scale-105 mb-[100px]"
+        class="block w-max duration-300 hover:scale-105 focus:scale-105"
         href="./"
         aria-label="{{component.link_logo_aria}}"
       >
@@ -13,6 +15,13 @@
           <use href="./assets/images/sprite.svg#logo"></use>
         </svg>
       </a>
+      <ul class="text-[#FDFDFD] hidden md:text-sm font-roboto md:flex md:gap-10 font-semibold">
+        {% for item in section.list %}
+        <li class="">
+          <a href="#{{item.anchor}}">{{item.title}}</a>
+        </li>
+        {% endfor %}
+      </ul>
       <div class="burger-container">
         <label
           class="burger-menu-label peer relative z-auto cursor-pointer px-3 py-6 md:hidden"
@@ -54,16 +63,18 @@
       </div>
     </div>
     <h1
-      class="text-[#FDFDFD] font-oswald text-[52px] font-bold leading-[1.1] tracking-[-1.56px] mb-3.5"
+      class="text-[#FDFDFD] md:max-w-[360px] md:mb-[66px] font-oswald text-[52px] md:text-[68px] md:tracking-[-2.04px] font-bold leading-[1.1] tracking-[-1.56px] mb-3.5 xl:text-[100px] xl:tracking-[-3px] xl:max-w-[592px] xl:mb-[52px]"
     >
       {{section.title}}
     </h1>
-    <p class="text-[#FDFDFD] text-sm font-medium font-roboto max-w-[188px] mb-10">
+    <p
+      class="text-[#FDFDFD] text-sm font-medium font-roboto max-w-[188px] md:max-w-[370px] mb-10 md:text-2xl mdOnly:mb-[60px] xl:max-w-[488px]"
+    >
       {{section.text}}
     </p>
-    <div class="grid gap-4">
-      <button type="button" class="btn btn-blue mx-auto">{{section.btnText}}</button>
-      <button type="button" class="btn btn-second mx-auto">{{section.btnSecond}}</button>
+    <div class="grid gap-4 md:grid-cols-2 mdOnly:gap-5 md:max-w-[420px] xl:max-w-[416px]">
+      <button type="button" class="btn btn-blue smOnly:mx-auto">{{section.btnText}}</button>
+      <button type="button" class="btn btn-second smOnly:mx-auto">{{section.btnSecond}}</button>
     </div>
   </div>
 </header>

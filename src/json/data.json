@@ -7,7 +7,7 @@
   },
   "header": {
     "id": "header",
-    "title": "Find your<br> own way<br> in sport",
+    "title": "Find your<br class=\"md:hidden\"> own way<br class=\"md:hidden\"> in sport",
     "text": "New app for productive sport activities is available now",
     "list": [
       { "title": "Overview", "anchor": "header" },
