@@ -10,10 +10,11 @@
     "title": "Find your<br class=\"md:hidden\"> own way<br class=\"md:hidden\"> in sport",
     "text": "New app for productive sport activities is available now",
     "list": [
-      { "title": "Overview", "anchor": "header" },
-      { "title": "Features", "anchor": "app" },
-      { "title": "Pricing", "anchor": "plans" },
-      { "title": "Contacts ", "anchor": "subscribe" }
+      { "title": "Home", "anchor": "header" },
+      { "title": "Overview", "anchor": "why" },
+      { "title": "Program", "anchor": "choose" },
+      { "title": "Plans", "anchor": "plans" },
+      { "title": "Contacts ", "anchor": "find" }
     ],
     "btnText": "Get Started",
     "btnSecond": "Try demo"
@@ -88,22 +89,72 @@
   },
   "find": {
     "id": "find",
-    "title": "find"
+    "title": "Let’s Find Your Way <br>in Sport!",
+    "text": "We make real results happen. <br>Let`s find your personal trainer",
+    "contacts": [
+      {
+        "title": "email",
+        "text": "info@sports.com",
+        "icon": "email",
+        "link": "mailto:info@sports.com"
+      },
+      {
+        "title": "address",
+        "text": "Jl KH Samanhudi Metro Atom Plaza Bl AKS 1/11, Dki Jakarta",
+        "icon": "address",
+        "link": "https://goo.gl/maps/7Q3jQzZ1QKk8Q6Qv6"
+      },
+      {
+        "title": "phone",
+        "text": "+62 (0) 000 0000 00",
+        "icon": "phone",
+        "link": "tel:+62 (0) 000 0000 00"
+      }
+    ],
+    "form": [
+      {
+        "title": "Name",
+        "icon": "user",
+        "type": "text"
+      },
+      {
+        "title": "Email",
+        "icon": "email",
+        "type": "email"
+      },
+      {
+        "title": "Phone",
+        "icon": "phone",
+        "type": "tel"
+      },
+      {
+        "title": "Message",
+        "icon": "message",
+        "type": "textarea"
+      }
+    ],
+    "btnText":"Let’s Talk"
   },
   "subscribe": {
     "id": "subscribe",
-    "title": "subscribe"
+    "title": "The all-in-one fitness method powered by your bodyweight to slulpt, and strengthen",
+    "banner": {
+      "text": "Want know about new plans?",
+      "title": "Subscribe Now",
+      "email": "Email"
+    }
   },
 
   "footer": {
     "id": "footer",
     "title": "footer",
-    "year": "© 2023 FitGym",
+    "year": "© <span class=\"footer-year\">10</span> FitGym",
     "list": [
-      { "title": "Overview", "anchor": "header" },
-      { "title": "Features", "anchor": "app" },
-      { "title": "Pricing", "anchor": "plans" },
-      { "title": "Contacts", "anchor": "subscribe" }
+      { "title": "Home", "anchor": "header" },
+      { "title": "Overview", "anchor": "why" },
+      { "title": "Program", "anchor": "choose" },
+      { "title": "Plans", "anchor": "plans" },
+      { "title": "Contacts ", "anchor": "find" }
     ],
     "socials": [
       { "title": "Facebook", "icon": "facebook" },

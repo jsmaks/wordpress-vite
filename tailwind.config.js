@@ -46,10 +46,10 @@ module.exports = {
         },
         white: {
           DEFAULT: '#ffffff', // class="bg-white text-white border-white"
-          dark: '#fafafa', 
-          'FD': '#FDFDFD',
+          dark: '#fafafa',
+          FD: '#FDFDFD',
         },
-      
+
         accent: '#2E43A4', // class="bg-accent text-accent border-accent"
         primary: '#f1f1f1',
         second: '#f2f2f2',

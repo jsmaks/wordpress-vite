@@ -1,0 +1,32 @@
+.subscribe {
+  background: url('./assets/images/sections/subscribe/mob-girl.webp'),
+    url('./assets/images/sections/subscribe/bg.svg');
+  background-size:
+    286px auto,
+    auto auto;
+  background-repeat: no-repeat, no-repeat;
+  background-position:
+    top 102px left calc(50% + 21px),
+    top -56px left calc(50% - 49px);
+
+  @include mq(tablet) {
+    background-size:
+      300px auto,
+      auto auto;
+    background-repeat: no-repeat, no-repeat;
+    background-position:
+      top 87px left calc(50% + -164px),
+      top -60px left calc(50% - 235px);
+  }
+  @include mq(desktop) {
+    background: url('./assets/images/sections/subscribe/desk-girl.webp'),
+      url('./assets/images/sections/subscribe/bg.svg');
+    background-size:
+      680px auto,
+      1339px auto;
+    background-repeat: no-repeat, no-repeat;
+    background-position:
+      top 190px left calc(50% - 251px),
+      top -236px left calc(50% - 427px);
+  }
+}
