@@ -5,6 +5,10 @@
 
 // VENDORS
 @import 'vendors/tailwind';
+/*! purgecss start ignore */
+@import 'vendors/slick';
+@import 'vendors/slick-theme';
+/*! purgecss end ignore */
 
 // COMPONENTS
 @import 'components/modal';

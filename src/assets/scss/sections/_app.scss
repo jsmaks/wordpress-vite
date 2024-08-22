@@ -1,0 +1,29 @@
+.app {
+  background-image: url('./assets/images/sections/app/bg-mob.webp');
+  background-repeat: no-repeat;
+  background-size: 360px auto;
+  background-position: bottom 40px center;
+
+  @include mq(tablet) {
+    background-position: bottom 20px right calc(50% - 180px);
+  }
+
+  @include mq(desktop) {
+    background-image: url('./assets/images/sections/app/bg-desk.webp');
+    background-size: 698px auto;
+    background-position: bottom 60px right calc(50% - 298px);
+  }
+
+  @for $i from 1 to 4 {
+    .item:nth-child(#{$i})::before {
+      content: '';
+      display: block;
+      width: 100%;
+      max-width: 24px;
+      height: 24px;
+      background-image: url('./assets/images/sections/app/#{$i}.svg');
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+}
