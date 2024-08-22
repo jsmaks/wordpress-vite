@@ -72,9 +72,9 @@ body {
   }
 }
 
-.link-bg {
-  background: linear-gradient(180deg, #0239fe 0%, #0285fe 100%);
-}
 html {
   scroll-behavior: smooth;
+}
+.gradient {
+  background: linear-gradient(180deg, #0239fe 0%, #0285fe 100%);
 }

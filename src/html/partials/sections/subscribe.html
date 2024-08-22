@@ -1,4 +1,49 @@
 {% set section = subscribe %}
-<section class="{{section.id}} section">
-  <div class="container"></div>
+<section class="{{section.id}} section !pb-[100px] xl:!pt-[240px] -mb-[240px] relative md:!pb-20">
+  <div class="container">
+    <h2
+      class="font-oswald text-[28px] font-bold pt-[320px] md:pt-[40px] md:ml-auto md:text-[32px] md:max-w-[336px] xl:text-5xl xl:leading-[1.3] xl:max-w-[488px]"
+    >
+      {{section.title}}
+    </h2>
+    <div
+      class="banner gradient rounded-[20px] py-[60px] mt-10 px-3 md:mt-[160px] xl:max-w-[1008px] xl:mx-auto xl:mt-[300px]"
+    >
+      <p class="text-center">{{section.banner.text}}</p>
+      <h3 class="font-oswald text-[32px] md:text-5xl font-semibold text-center mt-5">
+        {{section.banner.title}}
+      </h3>
+      <div class="relative mt-10 max-w-[500px] mx-auto">
+        <form action="">
+          <label>
+            <input
+              type="text"
+              placeholder=" {{section.banner.email}}"
+              class="placeholder:text-[#A5D2FF] placeholder:font-poppins md:text-[18px] items-center placeholder:text-[18px] py-5 px-7 w-full rounded-xl bg-[#00113B] pr-[60px]"
+            />
+          </label>
+          <button
+            type="submit"
+            class="absolute right-7 top-1/2 transform -translate-y-1/2 stroke-[#A5D2FF] hover:stroke-[#0285FE] transition-colors duration-150 focus:stroke-[#0285FE]"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="22"
+              height="17"
+              viewBox="0 0 22 17"
+              fill="none"
+            >
+              <path d="M1 8.5H21" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+              <path
+                d="M14 1.5L21 8.5L14 15.5"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              />
+            </svg>
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
 </section>
