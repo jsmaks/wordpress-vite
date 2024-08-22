@@ -1,0 +1,24 @@
+.score {
+  background: linear-gradient(180deg, #0239fe 0%, #0285fe 100%);
+
+  @include mq(tablet) {
+    background: url('./assets/images/sections/score/arrow-tab.svg'),
+      linear-gradient(180deg, #0239fe 0%, #0285fe 100%);
+    background-repeat: no-repeat;
+    background-size:
+      98px auto,
+      auto;
+    background-position:
+      top 12px center,
+      top left;
+  }
+
+  .score-list-wrapper {
+    @include mq(mobile-only) {
+      background-image: url('./assets/images/sections/score/arrow.svg');
+      background-repeat: no-repeat;
+      background-size: 60px auto;
+      background-position: top 80px center;
+    }
+  }
+}

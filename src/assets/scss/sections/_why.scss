@@ -1,0 +1,40 @@
+.why {
+  background-image: url('./assets/images/sections/why/bg-mob.webp');
+  background-repeat: no-repeat;
+  background-size: 320px auto;
+  background-position: top 44px center;
+
+  @include mq(tablet) {
+    background-size: 334px auto;
+    background-position: top 60px left calc(50% - 186px);
+  }
+
+  @include mq(desktop) {
+    background-image: url('./assets/images/sections/why/bg-desk.webp');
+    background-size: 592px auto;
+    background-position: top 80px left calc(50% - 316px);
+  }
+
+  .why-item::before {
+    display: block;
+    content: '';
+    width: 100%;
+    max-width: 32px;
+    height: 32px;
+    background-image: url('./assets/images/sections/why/arrow.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+
+    @include mq(tablet) {
+      max-width: 48px;
+      height: 48px;
+      background-image: url('./assets/images/sections/why/arrow-tab.svg');
+    }
+
+    @include mq(desktop) {
+      max-width: 72px;
+      height: 72px;
+      background-image: url('./assets/images/sections/why/arrow.svg');
+    }
+  }
+}
