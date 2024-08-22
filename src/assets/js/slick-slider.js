@@ -27,7 +27,7 @@ $('.choose-slider').slick({
     {
       breakpoint: 1279.98,
       settings: {
-        slidesToShow: 4,
+        slidesToShow: 3,
       },
     },
     {

@@ -1,12 +1,13 @@
 {% set section = choose %}
 <section class="{{section.id}} section">
   <div class="container">
-    <h2 class="text-center mb-10 section-title">{{section.title}}</h2>
-    <ul class="choose-slider">
+    <h2 class="text-center mb-10 section-title md:tracking-[-0.96px] xl:tracking-[-1.44px]">
+      {{section.title}}
+    </h2>
+    <ul class="choose-slider xl:mb-10">
       {% for item in section.listImage %}
-      <li class="">
-        <picture class="nameclass">
-          <!-- WEBP -->
+      <li class="slider-item xl:max-w-[384px] rounded-lg">
+        <picture>
           <source
             media="(min-width: 1280px)"
             type="image/webp"
@@ -24,6 +25,7 @@
             "
           />
           <img
+            class="xl:w-[384px]"
             width="320"
             height="367"
             loading="lazy"
@@ -32,9 +34,12 @@
             srcset="./assets/images/sections/choose/{{item.img}}-mob@2x.webp 2x"
           />
         </picture>
+        <div class="overlay-text w-full text-sm md:text-base p-4 xl:text-lg text-white text-center">
+          {{item.text}}
+        </div>
       </li>
       {% endfor %}
     </ul>
-    <button class="btn btn-blue">{{section.btnText}}</button>
+    <button class="btn btn-blue mx-auto !max-w-[200px]">{{section.btnText}}</button>
   </div>
 </section>
