@@ -87,6 +87,12 @@ body {
   }
 }
 
+html {
+  scroll-behavior: smooth;
+}
+.gradient {
+  background: linear-gradient(180deg, #0239fe 0%, #0285fe 100%);
+}
 .btn-second {
   border-radius: 12px;
   border: 2px solid #0239fe;
@@ -111,7 +117,4 @@ body {
 
 .link-bg {
   background: linear-gradient(180deg, #0239fe 0%, #0285fe 100%);
-}
-html {
-  scroll-behavior: smooth;
 }
