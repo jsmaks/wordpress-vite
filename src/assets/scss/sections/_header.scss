@@ -1,2 +1,35 @@
-// .header {
-// }
+.header {
+  background-image: url('./assets/images/sections/header/bg-girl-mob@2x.webp'),
+    url('../images/sections/header/bg-mob.svg');
+  background-repeat: no-repeat;
+  background-size:
+    257px auto,
+    1827px auto;
+  background-position:
+    top 40px right calc(50% - 121px),
+    top -945px right calc(50% + 180px);
+
+  @include mq(tablet) {
+    background-image: url('./assets/images/sections/header/bg-girl-mob@2x.webp'),
+      url('../images/sections/header/bg-tab.svg');
+    background-repeat: no-repeat;
+    background-size:
+      336px auto,
+      1628px auto;
+    background-position:
+      top 30px right calc(50% - 188px),
+      top -506px right calc(50% + 53px);
+  }
+
+  @include mq(desktop) {
+    background-image: url('./assets/images/sections/header/bg-girl-desk@2x.webp'),
+      url('../images/sections/header/bg-desk.svg');
+    background-repeat: no-repeat;
+    background-size:
+      559px auto,
+      2351px auto;
+    background-position:
+      top 30px right calc(50% - 398px),
+      top -858px right calc(50% + 208px);
+  }
+}

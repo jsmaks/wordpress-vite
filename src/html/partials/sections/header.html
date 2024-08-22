@@ -1,7 +1,80 @@
 {% set section = header %}
 
-<header id="{{section.id}}" class="{{section.id}}">
+<header class="{{section.id}} pt-5 pb-[60px] md:pb-[168px] xl:pt-6 xl:pb-[324px]">
   <div class="container">
-    <h1>{{section.title}}</h1>
+    <div
+      class="flex items-start mb-[100px] smOnly:justify-between md:mb-[107px] md:items-center md:gap-[60px] xl:mb-[110px] xl:gap-[105px]"
+    >
+      <a
+        class="block w-max duration-300 hover:scale-105 focus:scale-105"
+        href="./"
+        aria-label="{{component.link_logo_aria}}"
+      >
+        <svg class="" width="104" height="32" aria-label="{{component.logo_aria}}">
+          <title>{{component.logo_aria}}</title>
+          <use href="./assets/images/sprite.svg#logo"></use>
+        </svg>
+      </a>
+      <ul class="text-[#FDFDFD] hidden md:text-sm font-roboto md:flex md:gap-10 font-semibold">
+        {% for item in section.list %}
+        <li class="">
+          <a href="#{{item.anchor}}">{{item.title}}</a>
+        </li>
+        {% endfor %}
+      </ul>
+      <div class="burger-container">
+        <label
+          class="burger-menu-label peer relative z-auto cursor-pointer px-3 py-6 md:hidden"
+          aria-label="Перемкнути мобільне меню"
+          for="mobile-menu"
+        >
+          <input
+            class="burger-menu-input peer hidden"
+            id="mobile-menu"
+            type="checkbox"
+            data-gaconnector-tracked="true"
+          />
+          <span
+            class="relative z-50 block h-[2px] w-7 cursor-pointer bg-white content-[''] before:absolute before:top-[-0.45rem] before:z-50 before:block before:h-full before:w-full before:bg-white before:transition-all before:duration-200 before:ease-out before:content-[''] after:absolute after:bottom-[-0.45rem] after:right-0 after:block after:h-full after:w-full after:bg-white after:transition-all after:duration-200 after:ease-out after:content-[''] peer-checked:bg-transparent before:peer-checked:top-0 before:peer-checked:w-full before:peer-checked:rotate-45 before:peer-checked:transform after:peer-checked:bottom-0 after:peer-checked:w-full after:peer-checked:-rotate-45 after:peer-checked:transform"
+          ></span>
+          <span
+            class="fixed inset-0 z-40 hidden h-full w-full bg-white/50 backdrop-blur-sm peer-checked:block"
+          >
+            &nbsp;
+          </span>
+        </label>
+        <div
+          class="burger-backdrop fixed right-0 top-0 z-40 h-full w-full translate-x-full overflow-y-auto overscroll-y-none transition duration-500 peer-has-[:checked]:translate-x-0"
+        >
+          <div
+            class="burger-content float-right min-h-full w-[85%] bg-[#000105] px-6 pt-12 shadow-2xl"
+          >
+            <div class="flex flex-col gap-4 pb-4 pt-14">
+              <ul class="text-[#FDFDFD] font-roboto grid gap-5 font-semibold">
+                {% for item in section.list %}
+                <li class="">
+                  <a href="#{{item.anchor}}">{{item.title}}</a>
+                </li>
+                {% endfor %}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h1
+      class="text-[#FDFDFD] md:max-w-[360px] md:mb-[66px] font-oswald text-[52px] md:text-[68px] md:tracking-[-2.04px] font-bold leading-[1.1] tracking-[-1.56px] mb-3.5 xl:text-[100px] xl:tracking-[-3px] xl:max-w-[592px] xl:mb-[52px]"
+    >
+      {{section.title}}
+    </h1>
+    <p
+      class="text-[#FDFDFD] text-sm font-medium font-roboto max-w-[188px] md:max-w-[370px] mb-10 md:text-2xl mdOnly:mb-[60px] xl:max-w-[488px]"
+    >
+      {{section.text}}
+    </p>
+    <div class="grid gap-4 md:grid-cols-2 mdOnly:gap-5 md:max-w-[420px] xl:max-w-[416px]">
+      <button type="button" class="btn btn-blue smOnly:mx-auto">{{section.btnText}}</button>
+      <button type="button" class="btn btn-second smOnly:mx-auto">{{section.btnSecond}}</button>
+    </div>
   </div>
 </header>
