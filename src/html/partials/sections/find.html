@@ -1,4 +1,59 @@
 {% set section = find %}
 <section id="{{section.id}}" class="{{section.id}} section">
-  <div class="container"></div>
+  <div class="container">
+    <h2 class="text-[28px] font-oswald font-bold">{{section.title}}</h2>
+    <p class="mt-7 font-poppins">{{section.text}}</p>
+    <ul class="mt-8 grid gap-y-4 font-poppins font-normal">
+      {% for item in section.contacts %}
+      <li class="flex items-center">
+        <svg class="w-6 h-6 min-w-6 mr-6" aria-label="{{item.title}}">
+          <use href="./assets/images/sprite.svg#{{item.icon}}"></use>
+        </svg>
+        <a href="{{item.link}}" class="hover:underline">{{item.text}}</a>
+      </li>
+      {% endfor %}
+    </ul>
+    <div class="form__wraper mt-10">
+      <form action="">
+        <ul class="grid gap-y-5">
+          {% for item in section.form %}
+          <li class="relative">
+            <label>
+              {% if item.type != "textarea" %}
+              <input
+                type="{{item.type}}"
+                placeholder="{{item.title}}"
+                class="placeholder:text-[#A5D2FF] placeholder:font-poppins md:text-[18px] items-center placeholder:text-[18px] py-3 px-7 w-full rounded-xl placeholder:font-normal bg-[#010A2E] pr-[60px] border-[2px] border-[#023DFE] focus-visible:border-[#023DFE]"
+              />
+            </label>
+            {% else %}
+            <label>
+              <textarea
+              maxlength="150"
+               placeholder="{{item.title}}"
+                class="placeholder:text-[#A5D2FF] placeholder:font-poppins md:text-[18px] h-[142px] items-center placeholder:text-[18px] py-3 px-7 w-full rounded-xl placeholder:font-normal bg-[#010A2E] pr-[60px] border-[2px] border-[#023DFE] focus-visible:border-[#023DFE]"
+              ></textarea>
+            </label>
+            {% endif %} {% if item.type != "textarea" %}
+            <svg
+              class="w-6 h-6 absolute right-7 top-1/2 transform -translate-y-1/2"
+              aria-label="icon {{item.title}}"
+            >
+              <use href="./assets/images/sprite.svg#{{item.icon}}"></use>
+            </svg>
+            {% else %}
+            <svg
+              class="w-6 h-6 absolute right-7 top-4 "
+              aria-label="icon {{item.title}}"
+            >
+              <use href="./assets/images/sprite.svg#{{item.icon}}"></use>
+            </svg>
+            {% endif %}
+          </li>
+          {% endfor %}
+        </ul>
+        <button class="btn btn-blue mt-7 mx-auto !max-w-[440px]" type="submit">{{section.btnText}}</button>
+      </form>
+    </div>
+  </div>
 </section>
