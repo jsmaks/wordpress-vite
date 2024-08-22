@@ -66,7 +66,51 @@
   },
   "find": {
     "id": "find",
-    "title": "find"
+    "title": "Let’s Find Your Way <br>in Sport!",
+    "text": "We make real results happen. <br>Let`s find your personal trainer",
+    "contacts": [
+      {
+        "title": "email",
+        "text": "info@sports.com",
+        "icon": "email",
+        "link": "mailto:info@sports.com"
+      },
+      {
+        "title": "address",
+        "text": "Jl KH Samanhudi Metro Atom Plaza Bl AKS 1/11, Dki Jakarta",
+        "icon": "address",
+        "link": "https://goo.gl/maps/7Q3jQzZ1QKk8Q6Qv6"
+      },
+      {
+        "title": "phone",
+        "text": "+62 (0) 000 0000 00",
+        "icon": "phone",
+        "link": "tel:+62 (0) 000 0000 00"
+      }
+    ],
+    "form": [
+      {
+        "title": "Name",
+        "icon": "user",
+        "type": "text"
+      },
+      {
+        "title": "Email",
+        "icon": "email",
+        "type": "email"
+      },
+      {
+        "title": "Phone",
+        "icon": "phone",
+        "type": "tel"
+      },
+      {
+        "title": "Message",
+        "icon": "message",
+        "type": "textarea"
+      }
+    ],
+    "btnText":"Let’s Talk"
   },
   "subscribe": {
     "id": "subscribe",
