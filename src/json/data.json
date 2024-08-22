@@ -54,11 +54,34 @@
   },
   "choose": {
     "id": "choose",
-    "title": "choose"
+    "title": "Choose a program",
+    "btnText": "See more",
+    "listImage": [
+      {
+        "alt": "workout",
+        "img": "1",
+        "text": "Exercise routines: built exercise routines that you can follow along with, either at home or in the gym.<br> Tracking tools: track your progress over time, either by logging the exercises you've completed, the amount of weight you've lifted, or the number of calories you've burned.<br> Personalized recommendations: we use data about your fitness level, goals, and preferences to make personalized workout recommendations."
+      },
+      {
+        "alt": "yoga",
+        "img": "2",
+        "text": "Video classes: Our app is a great way to practice yoga at home or on-the-go. Yoga available that offer a variety of features and styles of yoga, from beginner-level classes to advanced poses.<br> Personalized recommendations: the app might suggest specific poses or sequences that are best suited to your body type, or recommend a yoga routine based on your fitness level.<br> Tracking tools: Some yoga apps allow you to track your progress all time."
+      },
+      {
+        "alt": "crossfit",
+        "img": "3",
+        "text": "WOD tracking: allow you to log your daily workouts, known as WODs (Workouts of the Day), so you can track your progress over time.<br> Exercise libraries: app include libraries of exercises, with detailed instructions and videos for proper form and technique.<br> Leaderboards: we have leaderboards that allow you to see how your performance compares to other users, either within your own gym or across the broader CrossFit community."
+      }
+    ]
   },
   "app": {
     "id": "app",
-    "title": "app"
+    "title": "Use our App for tracking your succes",
+    "list": [
+      "your training program is always with you",
+      "you can track your own activity",
+      "you can set your own goals"
+    ]
   },
   "plans": {
     "id": "plans",

@@ -1,6 +1,45 @@
 {% set section = choose %}
 <section id="{{section.id}}" class="{{section.id}} section">
   <div class="container">
-    <button class="btn btn-blue">Gst syka</button>
+    <h2 class="text-center mb-10 section-title md:tracking-[-0.96px] xl:tracking-[-1.44px]">
+      {{section.title}}
+    </h2>
+    <ul class="choose-slider xl:mb-10">
+      {% for item in section.listImage %}
+      <li class="slider-item xl:max-w-[384px] rounded-lg">
+        <picture>
+          <source
+            media="(min-width: 1280px)"
+            type="image/webp"
+            srcset="
+              ./assets/images/sections/choose/{{item.img}}-desk.webp    1x,
+              ./assets/images/sections/choose/{{item.img}}-desk@2x.webp 2x
+            "
+          />
+          <source
+            media="(min-width: 768px)"
+            type="image/webp"
+            srcset="
+              ./assets/images/sections/choose/{{item.img}}-tab.webp    1x,
+              ./assets/images/sections/choose/{{item.img}}-tab@2x.webp 2x
+            "
+          />
+          <img
+            class="xl:w-[384px]"
+            width="320"
+            height="367"
+            loading="lazy"
+            alt="{{item.alt}}"
+            src="./assets/images/sections/choose/{{item.img}}-mob.webp"
+            srcset="./assets/images/sections/choose/{{item.img}}-mob@2x.webp 2x"
+          />
+        </picture>
+        <div class="overlay-text w-full text-sm md:text-base p-4 xl:text-lg text-white text-center">
+          {{item.text}}
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+    <button class="btn btn-blue mx-auto !max-w-[200px]">{{section.btnText}}</button>
   </div>
 </section>
