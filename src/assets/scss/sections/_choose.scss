@@ -7,8 +7,8 @@
 
   .slider-item img {
     transition:
-      transform 0.3s ease,
-      filter 0.3s ease;
+      transform 0.4s ease,
+      filter 0.7s ease;
     width: 100%;
     height: auto;
     display: block;
@@ -20,7 +20,9 @@
     left: 50%;
     transform: translate(-50%, -50%) translateY(100%);
     opacity: 0;
-    transition: transform opacity 0.3s ease;
+    transition:
+      transform 0.4s ease,
+      opacity 0.3s ease;
   }
 
   .slider-item:hover img {
