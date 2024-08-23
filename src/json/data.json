@@ -133,7 +133,13 @@
         "type": "textarea"
       }
     ],
-    "btnText":"Let’s Talk"
+    "listSocial": [
+      { "title": "Facebook", "icon": "facebook" },
+      { "title": "Instagram", "icon": "instagram" },
+      { "title": "LinkedIn", "icon": "linkedin" },
+      { "title": "Twitter", "icon": "twitter" }
+    ],
+    "btnText": "Let’s Talk"
   },
   "subscribe": {
     "id": "subscribe",

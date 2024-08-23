@@ -1,5 +1,10 @@
-const footerYearElement = document.querySelector('.footer-year');
-if (footerYearElement) {
+document.addEventListener('DOMContentLoaded', () => {
+  const footerYearElements = document.querySelectorAll('.footer-year');
   const currentYear = new Date().getFullYear();
-  footerYearElement.textContent = currentYear ;
-}
+
+  footerYearElements.forEach(element => {
+    element.textContent = currentYear;
+  });
+
+  console.log(footerYearElements); // NodeList of all elements with class "footer-year"
+});
