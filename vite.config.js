@@ -3,15 +3,13 @@ import path from 'path';
 import nunjucks from 'vite-plugin-nunjucks';
 import ViteSvgSpriteWrapper from 'vite-svg-sprite-wrapper';
 import { createHtmlPlugin } from 'vite-plugin-html';
-
+import FullReload from 'vite-plugin-full-reload';
 import data from './src/json/data.json';
 
-// other config settings: https://vitejs.dev/config/
 export default defineConfig({
   root: path.resolve(__dirname, 'src'),
   resolve: { alias: { '@': path.resolve(__dirname, 'src') } },
   base: './',
-
   server: {
     host: '0.0.0.0',
     port: 3000,
@@ -37,9 +35,6 @@ export default defineConfig({
             case fileName === 'sprite.svg':
               return 'assets/images/sprite.svg';
 
-            case extName === '.css':
-              return `assets/css/[name][extname]`;
-
             case extName === '.webp' ||
               extName === '.svg' ||
               extName === '.png' ||
@@ -58,6 +53,7 @@ export default defineConfig({
   },
   plugins: [
     nunjucks({
+      templatesDir: path.resolve(__dirname, 'src/templates'),
       variables: { 'index.html': data },
       nunjucksConfigure: { autoescape: false },
     }),
@@ -77,5 +73,6 @@ export default defineConfig({
         minifyCSS: true,
       },
     }),
+    FullReload(['src/**/*'], { always: true }), // Добавьте этот плагин
   ],
 });

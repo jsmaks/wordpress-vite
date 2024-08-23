@@ -31,14 +31,14 @@
         <ul class="flex gap-x-[10px] md:order-2 justify-center">
           {% for item in section.socials %}
           <li
-            class="rounded-[20px] link link-bg hover:scale-[1.1] duration-150 hover:cursor-pointer"
+            class="rounded-[20px] link link-bg hover:scale-[1.1] duration-150 hover:cursor-pointer hover:shadow-blue"
           >
             <a
               href=""
               class="flex h-10 w-10 flex-col justify-center items-center"
               aria-label="link {{section.item.title}}"
             >
-              <svg class="w-4 h-4 z-[10]" aria-label="описание">
+              <svg class="w-4 h-4 z-[10]" aria-label="">
                 <use href="./assets/images/sprite.svg#{{item.icon}}"></use>
               </svg>
             </a>

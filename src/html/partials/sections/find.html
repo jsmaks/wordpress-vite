@@ -29,9 +29,9 @@
             {% else %}
             <label>
               <textarea
-              maxlength="150"
-               placeholder="{{item.title}}"
-                class="placeholder:text-[#A5D2FF] placeholder:font-poppins md:text-[18px] h-[142px] items-center placeholder:text-[18px] py-3 px-7 w-full rounded-xl placeholder:font-normal bg-[#010A2E] pr-[60px] border-[2px] border-[#023DFE] focus-visible:border-[#023DFE]"
+                maxlength="150"
+                placeholder="{{item.title}}"
+                class="placeholder:text-[#A5D2FF] placeholder:font-poppins md:text-[18px] h-[142px] items-center placeholder:text-[18px] py-3 px-7 w-full rounded-xl placeholder:font-normal bg-[#010A2E] pr-[60px] border-[2px] border-[#023DFE] focus-visible:border-[#023DFE] resize-none"
               ></textarea>
             </label>
             {% endif %} {% if item.type != "textarea" %}
@@ -42,18 +42,38 @@
               <use href="./assets/images/sprite.svg#{{item.icon}}"></use>
             </svg>
             {% else %}
-            <svg
-              class="w-6 h-6 absolute right-7 top-4 "
-              aria-label="icon {{item.title}}"
-            >
+            <svg class="w-6 h-6 absolute right-7 top-4" aria-label="icon {{item.title}}">
               <use href="./assets/images/sprite.svg#{{item.icon}}"></use>
             </svg>
             {% endif %}
           </li>
           {% endfor %}
         </ul>
-        <button class="btn btn-blue mt-7 mx-auto !max-w-[440px]" type="submit">{{section.btnText}}</button>
+        <button class="btn btn-blue mt-7 mx-auto !max-w-[440px]" type="submit">
+          {{section.btnText}}
+        </button>
       </form>
     </div>
+    <ul
+      class="text-base font-normal grid grid-cols-2 gap-6 mt-10 justify-center mb-8 md:gap-x-10 xl:mt-0 xl:mb-0 font-poppins"
+    >
+      {% for item in section.listSocial %}
+      <li
+        class="relative find__list group bg-[#00113B] py-3 px-[6px] rounded-[20px] hover:cursor-pointer duration-200"
+      >
+        <a
+          href="#{{item.anchor}}"
+          class="text-white-FD group-hover:text-[#0285fe] focus:text-[#0285fe] transition-colors duration-200 flex items-center gap-x-3"
+        >
+          <span class="link-bg link rounded-[20px] w-10 h-10 flex justify-center items-center">
+            <svg class="w-4 h-4 z-[10]" aria-label="">
+              <use href="./assets/images/sprite.svg#{{item.icon}}"></use>
+            </svg>
+          </span>
+          <span>{{item.title}}</span>
+        </a>
+      </li>
+      {% endfor %}
+    </ul>
   </div>
 </section>

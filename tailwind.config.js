@@ -23,7 +23,7 @@ module.exports = {
     // SHADOW
     boxShadow: {
       orange: '2px 8px 29px rgba(240, 127, 46, 0.2)', // class="shadow-orange"
-      gray: '0px 1px 3px 0px rgba(0, 0, 0, 0.20)',
+      blue: '5px 5px 20px 0px rgba(2, 133, 254, 0.2)',
     },
     // THEME
     extend: {
