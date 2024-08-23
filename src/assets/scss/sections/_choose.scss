@@ -1,0 +1,37 @@
+.choose {
+  .slider-item {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+  }
+
+  .slider-item img {
+    transition:
+      transform 0.4s ease,
+      filter 0.7s ease;
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .slider-item .overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) translateY(100%);
+    opacity: 0;
+    transition:
+      transform 0.4s ease,
+      opacity 0.3s ease;
+  }
+
+  .slider-item:hover img {
+    filter: blur(24px);
+    transform: scale(1.1);
+  }
+
+  .slider-item:hover .overlay-text {
+    transform: translate(-50%, -50%) translateY(0);
+    opacity: 1;
+  }
+}
