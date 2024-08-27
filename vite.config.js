@@ -1,10 +1,6 @@
 import { defineConfig } from 'vite';
 import path from 'path';
-import nunjucks from 'vite-plugin-nunjucks';
-import ViteSvgSpriteWrapper from 'vite-svg-sprite-wrapper';
-import { createHtmlPlugin } from 'vite-plugin-html';
-import FullReload from 'vite-plugin-full-reload';
-import data from './src/json/data.json';
+import postcss from './postcss.config.js'; // Ensure this path is correct
 
 export default defineConfig({
   root: path.resolve(__dirname, 'src'),
@@ -35,44 +31,14 @@ export default defineConfig({
             case fileName === 'sprite.svg':
               return 'assets/images/sprite.svg';
 
-            case extName === '.webp' ||
-              extName === '.svg' ||
-              extName === '.png' ||
-              extName === '.jpg' ||
-              extName === '.jpeg' ||
-              extName === '.gif' ||
-              extName === '.ico':
+            case extName === '.webp' || extName === '.svg' || extName === '.png':
               return `assets/images/[name][extname]`;
-
-            default:
-              return 'assets/[name][extname]';
           }
         },
       },
     },
   },
-  plugins: [
-    nunjucks({
-      templatesDir: path.resolve(__dirname, 'src/templates'),
-      variables: { 'index.html': data },
-      nunjucksConfigure: { autoescape: false },
-    }),
-    ViteSvgSpriteWrapper({
-      icons: 'src/assets/images/sprite/**/*.svg',
-      outputDir: 'src/assets/images/',
-      sprite: {
-        shape: {
-          transform: ['svgo'],
-        },
-      },
-    }),
-    createHtmlPlugin({
-      minify: {
-        collapseWhitespace: true,
-        removeComments: true,
-        minifyCSS: true,
-      },
-    }),
-    FullReload(['src/**/*'], { always: true }), // Добавьте этот плагин
-  ],
+  css: {
+    postcss,
+  },
 });
