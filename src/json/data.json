@@ -124,7 +124,7 @@
   "find": {
     "id": "find",
     "title": "Let’s Find Your Way <br class=\"md:hidden\">in Sport!",
-    "text": "We make real results happen. <br class=\"md:hidden\">Let`s find your personal trainer",
+    "text": "We make real results happen. <br class=\"md:hidden\">Let`s find your <br class=\"notXl:hidden\">personal trainer",
     "contacts": [
       {
         "title": "email",
@@ -134,7 +134,7 @@
       },
       {
         "title": "address",
-        "text": "Jl KH Samanhudi Metro Atom Plaza Bl AKS 1/11, Dki Jakarta",
+        "text": "Jl KH Samanhudi Metro Atom Plaza Bl  <br class=\"notXl:hidden\">AKS 1/11, Dki Jakarta",
         "icon": "address",
         "link": "https://goo.gl/maps/7Q3jQzZ1QKk8Q6Qv6"
       },
