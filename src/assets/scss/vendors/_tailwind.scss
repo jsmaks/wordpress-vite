@@ -33,6 +33,10 @@ body {
   @apply block p-5 rounded-xl w-full max-w-[360px] font-poppins font-semibold text-base;
 }
 
+.btn-white {
+  @apply rounded-xl w-full block p-[17px] border border-white text-white font-poppins font-semibold text-base max-w-[200px] mx-auto hover:bg-white hover:text-[#0239fe] duration-300;
+}
+
 .visually-hidden {
   position: absolute !important;
   clip: rect(1px, 1px, 1px, 1px);

@@ -85,7 +85,41 @@
   },
   "plans": {
     "id": "plans",
-    "title": "plans"
+    "title": "Plans",
+    "list": [
+      {
+        "title": "Silver",
+        "items": ["Easy start for you", "Fitness assessment", "Sun-Fri - 18 - 22 pm"],
+        "price": "<span class=\"font-oswald text-[32px] leading-[1.3] font-bold\">$299</span>/month",
+        "online": "online/offline",
+        "svg": "1"
+      },
+      {
+        "title": "Platinum",
+        "items": [
+          "Easy start for you",
+          "Fitness assessment",
+          "24/7 access",
+          "Group or individual trainning program",
+          "Personalized Macros Diet Plan w/ Dietitian"
+        ],
+        "price": "<span class=\"font-oswald text-[32px] leading-[1.3] font-bold\">$499</span>/month",
+        "online": "online/offline",
+        "svg": "2"
+      },
+      {
+        "title": "Gold",
+        "items": [
+          "Unlimited classes",
+          "Fitness assessment",
+          "Personalized Macros Diet Plan w/ Dietitian"
+        ],
+        "price": "<span class=\"font-oswald text-[32px] leading-[1.3] font-bold\">$699</span>/month",
+        "online": "online/offline",
+        "svg": "3"
+      }
+    ],
+    "btn": "Select plan"
   },
   "find": {
     "id": "find",
@@ -168,5 +202,60 @@
       { "title": "Twitter", "icon": "twitter" },
       { "title": "LinkedIn", "icon": "linkedin" }
     ]
+  },
+  "modalForm": {
+    "id": "modalForm",
+    "btnCloseAria": "кнопка закриття модального вікна",
+    "title": "Contact us",
+    "INPUTS_EXPAMPLE": "Все доступные поля для формы лежат в файле 'allFormInputs.json' - скопируйте нужный обьект, и вставьте его ниже в массив inputs",
+    "inputs": [
+      {
+        "title": "Ім'я *",
+        "type": "text",
+        "name": "name",
+        "placeholder": "Ім'я",
+        "dataField": "name",
+        "required": true,
+        "autocomplete": "name"
+      },
+      {
+        "title": "Телефон *",
+        "type": "tel",
+        "name": "phone",
+        "placeholder": "",
+        "dataField": "phone",
+        "required": true,
+        "autocomplete": "tel"
+      },
+      {
+        "title": "Пошта *",
+        "type": "email",
+        "name": "email",
+        "placeholder": "email@gmail.com",
+        "dataField": "email",
+        "required": true,
+        "autocomplete": "email"
+      },
+      {
+        "title": "Я погоджуюся на обробку моїх персональних даних у маркетингових і комерційних цілях відповідно до ",
+        "type": "checkbox",
+        "name": "agree",
+        "dataField": "checkbox",
+        "required": true,
+        "class": "input-wrap-checkbox",
+        "linkSeparator": "та",
+        "links": [
+          {
+            "text": "Політики конфіденційності",
+            "href": "https://goit.global/ua/privacy-policy/"
+          },
+          {
+            "text": "Умов користування",
+            "href": "https://goit.global/ua/terms-of-use/"
+          }
+        ]
+      }
+    ],
+    "btnSubmit": "Зареєструватися"
   }
 }

@@ -1,4 +1,4 @@
-{% set formId = "modalForm" %}
+{% set formId = "find.form" %}
 <div class="backdrop is-hidden smOnly:px-5" data-modal>
   <div class="modal bg-white text-black-light">
     <button
@@ -18,7 +18,7 @@
     </button>
 
     <h2 class="mb-9 text-[20px] font-bold leading-[1.2] md:mb-9 md:text-[24px]">
-      {{ form.title }}
+      {{ modalForm.title }}
     </h2>
 
     {% include './formFields.njk' %}

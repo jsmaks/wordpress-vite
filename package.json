@@ -28,6 +28,7 @@
   },
   "dependencies": {
     "gsap": "^3.12.5",
+    "jquery": "^3.7.1",
     "slick-carousel": "^1.8.1"
   }
 }
