@@ -274,3 +274,48 @@ $slick-opacity-not-active: 0.25 !default;
     }
   }
 }
+
+// plans slider
+.plans-slider {
+  .slick-slide.slick-current.slick-active .item {
+    background: linear-gradient(180deg, #0239fe 0%, #0285fe 100%);
+    display: flex !important;
+    justify-content: space-between;
+    flex-direction: column;
+
+    @include mq(tablet) {
+      height: 700px;
+      transition: height 0.3s ease;
+    }
+  }
+
+  .slick-slide .item {
+    @include mq(tablet) {
+      display: flex !important;
+      justify-content: space-between;
+      flex-direction: column;
+    }
+  }
+
+  .slick-slide:nth-child(2) .item {
+    @include mq(desktop) {
+      background: linear-gradient(180deg, #0239fe 0%, #0285fe 100%);
+    }
+  }
+
+  .slick-slide {
+    display: flex !important;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+
+  &.slick-slider .slick-track,
+  .slick-slider .slick-list {
+    transform: translate3d(0, 0, 0);
+
+    @include mq(tablet) {
+      display: flex;
+      align-items: end;
+    }
+  }
+}

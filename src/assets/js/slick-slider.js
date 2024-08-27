@@ -38,3 +38,36 @@ $('.choose-slider').slick({
     },
   ],
 });
+
+$('.plans-slider').slick({
+  mobileFirst: true,
+  lazyLoad: 'ondemand',
+  dots: false,
+  arrows: true,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  speed: 400,
+  cssEase: 'linear',
+  centerPadding: 0,
+  prevArrow: $('.learn-prev-but-js'),
+  nextArrow: $('.learn-next-but-js'),
+  responsive: [
+    {
+      breakpoint: 1279.98,
+      settings: {
+        slidesToShow: 3,
+        centerMode: true, // Включаем центрирование на десктопе
+        centerPadding: '0px', // Подгоняем отступы для центрирования карточек
+      },
+    },
+    {
+      breakpoint: 767.98,
+      settings: {
+        // arrows: false,
+        centerMode: true,
+        centerPadding: '200px', // Устанавливаем отступы для показа карточек с боков
+        slidesToShow: 1,
+      },
+    },
+  ],
+});
