@@ -3,8 +3,8 @@
   <div class="container">
     <div class="tablet__wrapper md:grid md:grid-cols-2 md:gap-x-8">
       <div class="left-side">
-        <h2 class="text-[28px] font-oswald font-bold md:text-[32px] font-">{{section.title}}</h2>
-        <p class="mt-7 font-poppins md:mt-8">{{section.text}}</p>
+        <h2 class="text-[28px] font-oswald font-bold md:text-[32px] xl:text-5xl">{{section.title}}</h2>
+        <p class="mt-7 font-poppins md:mt-8 xl:mt-10 xl:text-lg">{{section.text}}</p>
         <ul class="mt-8 grid gap-y-4 font-poppins font-normal md:mt-10 md:gap-y-7 md:text-lg">
           {% for item in section.contacts %}
           <li class="flex items-center">
@@ -17,9 +17,9 @@
         </ul>
       </div>
 
-      <div class="form__wraper mt-10 md:mt-0 xl:mt-10">
+      <div class="form__wraper mt-10 md:mt-0 xl:mt-0">
         <form action="">
-          <ul class="grid gap-y-5">
+          <ul class="grid gap-y-5 xl:gap-y-10">
             {% for item in section.form %}
             <li class="relative">
               <label>
@@ -27,7 +27,7 @@
                 <input
                   type="{{item.type}}"
                   placeholder="{{item.title}}"
-                  class="placeholder:text-[#A5D2FF] placeholder:font-poppins md:text-[18px] items-center placeholder:text-[18px] py-3 px-7 w-full rounded-xl placeholder:font-normal bg-[#010A2E] pr-[60px] border-[2px] border-[#023DFE] focus-visible:border-[#023DFE]"
+                  class="placeholder:text-[#A5D2FF] placeholder:font-poppins md:text-[18px] items-center placeholder:text-[18px] py-3 px-7 w-full rounded-xl placeholder:font-normal bg-[#010A2E] pr-[60px] border-[2px] border-[#023DFE] focus-visible:border-[#023DFE] xl:py-5"
                 />
               </label>
               {% else %}
@@ -35,7 +35,7 @@
                 <textarea
                   maxlength="150"
                   placeholder="{{item.title}}"
-                  class="placeholder:text-[#A5D2FF] placeholder:font-poppins md:text-[18px] h-[142px] items-center placeholder:text-[18px] py-3 px-7 w-full rounded-xl placeholder:font-normal bg-[#010A2E] pr-[60px] border-[2px] border-[#023DFE] focus-visible:border-[#023DFE] resize-none"
+                  class="placeholder:text-[#A5D2FF] placeholder:font-poppins md:text-[18px] h-[142px] items-center placeholder:text-[18px] py-3 px-7 w-full rounded-xl placeholder:font-normal bg-[#010A2E] pr-[60px] border-[2px] border-[#023DFE] focus-visible:border-[#023DFE] resize-none xl:py-5"
                 ></textarea>
               </label>
               {% endif %} {% if item.type != "textarea" %}
@@ -53,22 +53,22 @@
             </li>
             {% endfor %}
           </ul>
-          <button class="btn btn-blue mt-7 mx-auto !max-w-[440px]" type="submit">
+          <button class="btn btn-blue mt-7 notXl:mx-auto !max-w-[440px] xl:!max-w-[200px] xl:!mr-auto xl:mt-10" type="submit">
             {{section.btnText}}
           </button>
         </form>
       </div>
     </div>
     <ul
-      class="text-base font-normal grid grid-cols-2 gap-6 mt-10 justify-center mb-8 xl:mt-0 xl:mb-0 font-poppins md:grid-cols-4 md:gap-x-2 md:mb-0 md:mt-"
+      class="text-base font-normal grid grid-cols-2 gap-6 mt-10 justify-center mb-8 xl:mb-0 font-poppins md:grid-cols-4 md:gap-x-2 md:mb-0 xl:mt-20 xl:gap-x-10"
     >
       {% for item in section.listSocial %}
       <li
-        class="relative find__list group bg-[#00113B] py-3 text px-[6px] rounded-[20px] hover:cursor-pointer duration-200"
+        class="relative find__list group xl:py-8 bg-[#00113B] py-3 text px-[6px] rounded-[20px] hover:cursor-pointer duration-200 xl:text-xl xl:pl-[60px]"
       >
         <a
           href="#{{item.anchor}}"
-          class="text-white-FD group-hover:text-[#0285fe] focus:text-[#0285fe] transition-colors duration-200 flex items-center gap-x-2"
+          class="text-white-FD group-hover:text-[#0285fe] focus:text-[#0285fe] transition-colors duration-200 flex items-center gap-x-2 xl:gap-x-5"
         >
           <span class="link-bg link rounded-[20px] w-10 h-10 flex justify-center items-center">
             <svg class="w-4 h-4 z-[10]" aria-label="">
