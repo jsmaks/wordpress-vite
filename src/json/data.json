@@ -89,8 +89,8 @@
   },
   "find": {
     "id": "find",
-    "title": "Let’s Find Your Way <br>in Sport!",
-    "text": "We make real results happen. <br>Let`s find your personal trainer",
+    "title": "Let’s Find Your Way <br class=\"md:hidden\">in Sport!",
+    "text": "We make real results happen. <br class=\"md:hidden\">Let`s find your personal trainer",
     "contacts": [
       {
         "title": "email",
