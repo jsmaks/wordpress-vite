@@ -3,12 +3,12 @@
   <div class="container">
     <div class="tablet__wrapper md:grid md:grid-cols-2 md:gap-x-8">
       <div class="left-side">
-        <h2 class="text-[28px] font-oswald font-bold md:text-[32px]">{{section.title}}</h2>
+        <h2 class="text-[28px] font-oswald font-bold md:text-[32px] font-">{{section.title}}</h2>
         <p class="mt-7 font-poppins md:mt-8">{{section.text}}</p>
         <ul class="mt-8 grid gap-y-4 font-poppins font-normal md:mt-10 md:gap-y-7 md:text-lg">
           {% for item in section.contacts %}
           <li class="flex items-center">
-            <svg class="w-6 h-6 min-w-6 mr-6 md:mr-6" aria-label="{{item.title}}">
+            <svg class="w-6 h-6 min-w-6 mr-6 md:mr-6 mt-" aria-label="{{item.title}}">
               <use href="./assets/images/sprite.svg#{{item.icon}}"></use>
             </svg>
             <a href="{{item.link}}" class="hover:underline">{{item.text}}</a>
@@ -17,7 +17,7 @@
         </ul>
       </div>
 
-      <div class="form__wraper mt-10 md:mt-0">
+      <div class="form__wraper mt-10 md:mt-0 xl:mt-">
         <form action="">
           <ul class="grid gap-y-5">
             {% for item in section.form %}
