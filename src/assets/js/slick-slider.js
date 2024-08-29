@@ -48,7 +48,7 @@ $('.plans-slider').slick({
   slidesToScroll: 1,
   speed: 400,
   cssEase: 'linear',
-  centerPadding: 0,
+  // centerPadding: 0,
   prevArrow: $('.learn-prev-but-js'),
   nextArrow: $('.learn-next-but-js'),
   responsive: [
