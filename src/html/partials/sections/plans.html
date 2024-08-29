@@ -11,19 +11,19 @@
       <li
         class="item text-center text-white-FD rounded-lg py-8 px-[50px] min-h-[638px] min-w-[305px]"
       >
-        <div class="min-h-[487px]">
-          <svg class="block mx-auto mb-5" width="32" height="32" aria-label="icon">
-            <use href="./assets/images/sprite.svg#{{item.svg}}"></use>
-          </svg>
-          <h3 class="item-title mb-6 font-oswald text-[32px] leading-[1.3]">{{item.title}}</h3>
-          <ul class="grid gap-5 justify-center mb-10">
-            {% for text in item.items %}
-            <li class="font-roboto font-light text-base">{{text}}</li>
-            {% endfor %}
-          </ul>
-          <p class="font-roboto text-xl leading-[1.3] mb-4">{{item.price}}</p>
-          <p class="font-roboto text-base">{{item.online}}</p>
-        </div>
+        <!-- <div class="min-h-[487px]"> -->
+        <svg class="block mx-auto mb-5" width="32" height="32" aria-label="icon">
+          <use href="./assets/images/sprite.svg#{{item.svg}}"></use>
+        </svg>
+        <h3 class="item-title mb-6 font-oswald text-[32px] leading-[1.3]">{{item.title}}</h3>
+        <ul class="flex flex-col grow gap-5 mb-10">
+          {% for text in item.items %}
+          <li class="font-roboto font-light text-base">{{text}}</li>
+          {% endfor %}
+        </ul>
+        <p class="font-roboto text-xl leading-[1.3] mb-4">{{item.price}}</p>
+        <p class="font-roboto text-base mb-[22px] xl:mb-10">{{item.online}}</p>
+        <!-- </div> -->
         <button type="button" class="btn-white" data-modal-open>{{section.btn}}</button>
       </li>
       {% endfor %}
