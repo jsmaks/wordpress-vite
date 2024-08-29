@@ -6,5 +6,5 @@ document.addEventListener('DOMContentLoaded', () => {
     element.textContent = currentYear;
   });
 
-  console.log(footerYearElements); // NodeList of all elements with class "footer-year"
+
 });
